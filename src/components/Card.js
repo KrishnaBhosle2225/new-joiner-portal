@@ -1,21 +1,20 @@
 import React from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
+
 
 function Card(props) {
   return (
-    <div className="ag-format-container">
-      <div className="ag-courses_box">
-        <div className="ag-courses_item">
-          <a href="#" className="ag-courses-item_link">
-            <div className="ag-courses-item_bg"></div>
+    <div className="card-container">
+      <Link to={`/${props.title}`} target="__blank" className="item_link">
+        
+        <h2 className="title item_bg">
+          {props.title}
+        </h2>
+        
+      </Link>
 
-            <div className="ag-courses-item_title">
-              {props.title}
-            </div>
 
-          </a>
-        </div>
-      </div>
     </div>
   );
 }

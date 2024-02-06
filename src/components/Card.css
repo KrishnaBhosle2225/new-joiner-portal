@@ -1,96 +1,24 @@
-.ag-format-container {
-    width: 1142px;
-    margin: 0 auto;
-  }
-  
-  .ag-courses_box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 50px 0;
-  }
-  
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(33.33333% - 30px);
-    flex-basis: calc(33.33333% - 30px);
 
-    margin: 0 15px 30px;
-    overflow: hidden;
-  
-    border-radius: 28px;
-  }
-  
-  .ag-courses-item_link {
-    display: block;
-    padding: 30px 20px;
-    background-color: #f7cfcf;
-  
-    overflow: hidden;
-  
-    position: relative;
-  }
-  
-  .ag-courses-item_link:hover {
-    text-decoration: none;
-  }
+.card-container {
+  text-align: center;
+  padding: 5rem;
+}
 
-  .ag-courses-item_link:hover .ag-courses-item_bg {
-    -webkit-transform: scale(10);
-    -ms-transform: scale(10);
-    transform: scale(10);
-  }
-  
-  .ag-courses-item_title {
-    min-height: 87px;
-    margin: 0 0 25px;
-  
-    overflow: hidden;
-  
-    font-weight: bold;
-    font-size: 30px;
-    color: #e61010;
-  
-    z-index: 2;
-    position: relative;
-  }
+.item_bg {
+  background-color: rgb(123, 136, 136);
+  min-width: 15rem;
+  border-radius: 5px;
+}
+
+.item_bg:hover {
+  background-color: antiquewhite;
+  transition:200ms
+}
+
+.title {
+  padding: 2rem;
+  color: black;
+}
 
 
 
-
-  @media only screen and (max-width: 979px) {
-    .ag-courses_item {
-      -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
-    }
-    .ag-courses-item_title {
-      font-size: 24px;
-    }
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .ag-format-container {
-      width: 96%;
-    }
-  
-  }
-  @media only screen and (max-width: 639px) {
-    .ag-courses_item {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-    }
-    .ag-courses-item_title {
-      min-height: 72px;
-      line-height: 1;
-  
-      font-size: 24px;
-    }
-    .ag-courses-item_link {
-      padding: 22px 40px;
-    }
-
-  }

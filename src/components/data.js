@@ -17,12 +17,13 @@ export const data = [
     },
     {
       id: "5",
-      title: "Workdesk Reservation",
+      title: "Workdesk",
     },
     {
        id:"6",
        title:"others..", 
     },
+    
   ];
 
   export default data;
